@@ -1,6 +1,8 @@
 from dataclasses import dataclass
 from typing import Dict, List, Tuple
 import numpy as np
+
+
 from qiskit.quantum_info import SparsePauliOp
 from src.quantum.qubo_builder import QUBOModel
 

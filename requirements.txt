@@ -1,5 +1,5 @@
-qiskit==2.5.2
-qiskit-aer==0.17.2
+qiskit>=2.5.0
+qiskit-aer>=0.17.0
 qiskit-algorithms>=0.3.0
 numpy>=1.26.0
 scipy>=1.11.0
