@@ -1,0 +1,390 @@
+{
+    "metadata": {
+        "region": "Departamento de Piura, Peru",
+        "entidad": "COER Piura / INDECI",
+        "ventana_critica_horas": 72.0,
+        "presupuesto_default_p": 3
+    },
+    "candidatos_J": [
+        {
+            "id": "J0_PAITA",
+            "nombre": "Puerto de Paita (Hub Maritimo)",
+            "provincia": "Paita",
+            "lat": -5.0892,
+            "lon": -81.1144,
+            "costo_fijo_fj": 45.0,
+            "capacidad_ton_cj": 280.0,
+            "es_primario": true
+        },
+        {
+            "id": "J1_PIURA",
+            "nombre": "Almacen Central Piura Metropolitana",
+            "provincia": "Piura",
+            "lat": -5.1945,
+            "lon": -80.6328,
+            "costo_fijo_fj": 40.0,
+            "capacidad_ton_cj": 260.0,
+            "es_primario": true
+        },
+        {
+            "id": "J2_SULLANA",
+            "nombre": "Hub Subregional Sullana (Eje Chira)",
+            "provincia": "Sullana",
+            "lat": -4.9039,
+            "lon": -80.6853,
+            "costo_fijo_fj": 38.0,
+            "capacidad_ton_cj": 210.0,
+            "es_primario": false
+        },
+        {
+            "id": "J3_CHULUCANAS",
+            "nombre": "Almacen Adelantado Chulucanas (Alto Piura)",
+            "provincia": "Morropon",
+            "lat": -5.0925,
+            "lon": -80.1625,
+            "costo_fijo_fj": 52.0,
+            "capacidad_ton_cj": 190.0,
+            "es_primario": false
+        },
+        {
+            "id": "J4_PAIMAS",
+            "nombre": "Base Adelantada Paimas / Sierra Norte",
+            "provincia": "Ayabaca",
+            "lat": -4.6294,
+            "lon": -79.9461,
+            "costo_fijo_fj": 58.0,
+            "capacidad_ton_cj": 160.0,
+            "es_primario": false
+        }
+    ],
+    "demandas_I": [
+        {
+            "id": "I0_CATACAOS",
+            "nombre": "Catacaos (Pedregal Grande / Narihuala)",
+            "subregion": "Bajo Piura",
+            "lat": -5.2667,
+            "lon": -80.6833,
+            "demanda_ton_di": 85.0,
+            "poblacion_critica": 24500
+        },
+        {
+            "id": "I1_CURA_MORI",
+            "nombre": "Cura Mori (Cucungara / Pozo de los Ramos)",
+            "subregion": "Bajo Piura",
+            "lat": -5.3214,
+            "lon": -80.6631,
+            "demanda_ton_di": 75.0,
+            "poblacion_critica": 19800
+        },
+        {
+            "id": "I2_LA_ARENA_TALLAN",
+            "nombre": "La Arena y El Tallan (Margen Derecha)",
+            "subregion": "Bajo Piura",
+            "lat": -5.3456,
+            "lon": -80.7108,
+            "demanda_ton_di": 70.0,
+            "poblacion_critica": 18200
+        },
+        {
+            "id": "I3_TAMBOGRANDE",
+            "nombre": "Tambogrande (Valle San Lorenzo)",
+            "subregion": "Medio Piura / Chira",
+            "lat": -4.9269,
+            "lon": -80.3444,
+            "demanda_ton_di": 65.0,
+            "poblacion_critica": 16500
+        },
+        {
+            "id": "I4_MORROPON_SALITRAL",
+            "nombre": "Morropon, Buenos Aires y Salitral",
+            "subregion": "Alto Piura",
+            "lat": -5.1856,
+            "lon": -79.9689,
+            "demanda_ton_di": 68.0,
+            "poblacion_critica": 17900
+        },
+        {
+            "id": "I5_SANTO_DOMINGO",
+            "nombre": "Santo Domingo y Chalaco",
+            "subregion": "Alto Piura / Andino Central",
+            "lat": -5.0297,
+            "lon": -79.8761,
+            "demanda_ton_di": 45.0,
+            "poblacion_critica": 11200
+        },
+        {
+            "id": "I6_CANCHAQUE_FAIQUE",
+            "nombre": "Canchaque y San Miguel de El Faique (Pusmalca)",
+            "subregion": "Sierra Piurana",
+            "lat": -5.3756,
+            "lon": -79.6058,
+            "demanda_ton_di": 60.0,
+            "poblacion_critica": 15400
+        },
+        {
+            "id": "I7_HUANCABAMBA",
+            "nombre": "Huancabamba y Sondorillo",
+            "subregion": "Sierra Piurana",
+            "lat": -5.2386,
+            "lon": -79.4506,
+            "demanda_ton_di": 55.0,
+            "poblacion_critica": 14800
+        },
+        {
+            "id": "I8_AYABACA",
+            "nombre": "Ayabaca, Montero y Lalaquiz",
+            "subregion": "Sierra Norte",
+            "lat": -4.6397,
+            "lon": -79.7147,
+            "demanda_ton_di": 58.0,
+            "poblacion_critica": 15100
+        }
+    ],
+    "arcos_base": [
+        {
+            "u": "J0_PAITA",
+            "v": "J1_PIURA",
+            "via": "PE-02 Paita-Piura",
+            "tiempo_base_h": 10.0
+        },
+        {
+            "u": "J0_PAITA",
+            "v": "J2_SULLANA",
+            "via": "PI-102 Paita-Sullana",
+            "tiempo_base_h": 11.0
+        },
+        {
+            "u": "J0_PAITA",
+            "v": "I2_LA_ARENA_TALLAN",
+            "via": "Ruta Costera Sechura-La Union-La Arena",
+            "tiempo_base_h": 22.0
+        },
+        {
+            "u": "J0_PAITA",
+            "v": "I1_CURA_MORI",
+            "via": "Corredor Oeste Bajo Piura (No inundable)",
+            "tiempo_base_h": 28.0
+        },
+        {
+            "u": "J1_PIURA",
+            "v": "J2_SULLANA",
+            "via": "PE-1N Panamericana Norte",
+            "tiempo_base_h": 8.0
+        },
+        {
+            "u": "J1_PIURA",
+            "v": "I0_CATACAOS",
+            "via": "PE-1N Via de Evitamiento / Puente Independencia",
+            "tiempo_base_h": 9.0
+        },
+        {
+            "u": "J1_PIURA",
+            "v": "I1_CURA_MORI",
+            "via": "PE-1N Eje Piura-Catacaos-Cura Mori",
+            "tiempo_base_h": 14.0
+        },
+        {
+            "u": "J1_PIURA",
+            "v": "I2_LA_ARENA_TALLAN",
+            "via": "Diques Margen Derecha Rio Piura",
+            "tiempo_base_h": 16.0
+        },
+        {
+            "u": "J1_PIURA",
+            "v": "J3_CHULUCANAS",
+            "via": "PE-1NR Corredor Piura-Chulucanas (Km 21)",
+            "tiempo_base_h": 15.0
+        },
+        {
+            "u": "J1_PIURA",
+            "v": "I3_TAMBOGRANDE",
+            "via": "Ruta Piura-Medio Piura",
+            "tiempo_base_h": 16.0
+        },
+        {
+            "u": "J2_SULLANA",
+            "v": "I3_TAMBOGRANDE",
+            "via": "PE-1NL Sullana-Tambogrande",
+            "tiempo_base_h": 10.0
+        },
+        {
+            "u": "J2_SULLANA",
+            "v": "J4_PAIMAS",
+            "via": "PE-1NL Sullana-Las Lomas-Paimas",
+            "tiempo_base_h": 20.0
+        },
+        {
+            "u": "J2_SULLANA",
+            "v": "I0_CATACAOS",
+            "via": "Bypass Oeste Sullana-Bajo Piura",
+            "tiempo_base_h": 24.0
+        },
+        {
+            "u": "J3_CHULUCANAS",
+            "v": "I3_TAMBOGRANDE",
+            "via": "Ruta San Lorenzo-Chulucanas",
+            "tiempo_base_h": 14.0
+        },
+        {
+            "u": "J3_CHULUCANAS",
+            "v": "I4_MORROPON_SALITRAL",
+            "via": "PE-1NR Chulucanas-Morropon-Salitral",
+            "tiempo_base_h": 12.0
+        },
+        {
+            "u": "J3_CHULUCANAS",
+            "v": "I5_SANTO_DOMINGO",
+            "via": "Ruta Local Chulucanas-Santo Domingo",
+            "tiempo_base_h": 18.0
+        },
+        {
+            "u": "J3_CHULUCANAS",
+            "v": "I6_CANCHAQUE_FAIQUE",
+            "via": "PE-1NJ Empalme Km 65-Canchaque (Pusmalca)",
+            "tiempo_base_h": 26.0
+        },
+        {
+            "u": "J3_CHULUCANAS",
+            "v": "I1_CURA_MORI",
+            "via": "Ruta Desierto Este Chulucanas-Cura Mori",
+            "tiempo_base_h": 34.0
+        },
+        {
+            "u": "J4_PAIMAS",
+            "v": "I8_AYABACA",
+            "via": "PE-1NL Paimas-Ayabaca",
+            "tiempo_base_h": 18.0
+        },
+        {
+            "u": "J4_PAIMAS",
+            "v": "I5_SANTO_DOMINGO",
+            "via": "Corredor Andino Paimas-Frias-Santo Domingo",
+            "tiempo_base_h": 26.0
+        },
+        {
+            "u": "J4_PAIMAS",
+            "v": "I6_CANCHAQUE_FAIQUE",
+            "via": "Corredor Altoandino Paimas-Lalaquiz-El Faique",
+            "tiempo_base_h": 35.0
+        },
+        {
+            "u": "J4_PAIMAS",
+            "v": "I7_HUANCABAMBA",
+            "via": "Ruta Transversal Sierra Norte-Huancabamba",
+            "tiempo_base_h": 38.0
+        },
+        {
+            "u": "I0_CATACAOS",
+            "v": "I1_CURA_MORI",
+            "via": "PE-1N Catacaos-Cura Mori",
+            "tiempo_base_h": 6.0
+        },
+        {
+            "u": "I0_CATACAOS",
+            "v": "I2_LA_ARENA_TALLAN",
+            "via": "Puente Viejo Catacaos-La Arena",
+            "tiempo_base_h": 8.0
+        },
+        {
+            "u": "I4_MORROPON_SALITRAL",
+            "v": "I6_CANCHAQUE_FAIQUE",
+            "via": "PE-1NJ Salitral-Bigote-Canchaque",
+            "tiempo_base_h": 16.0
+        },
+        {
+            "u": "I6_CANCHAQUE_FAIQUE",
+            "v": "I7_HUANCABAMBA",
+            "via": "PE-1NJ Canchaque-Huancabamba (Cruz Blanca)",
+            "tiempo_base_h": 20.0
+        }
+    ],
+    "escenarios_S": {
+        "s1_alto_piura": {
+            "id": "s1",
+            "nombre": "Escenario s1: Ruptura del Eje Alto Piura (PE-1NR)",
+            "corredor_afectado": "Corredor Piura - Chulucanas - Morropon (PE-1NR)",
+            "mecanismo_falla": "Activacion de quebradas (Rio Seco, Sol Sol, Paccha) y colapso/cierre de puentes Independencia y Carrasquillo",
+            "probabilidad_default": 0.35,
+            "arcos_afectados": [
+                {
+                    "u": "J1_PIURA",
+                    "v": "J3_CHULUCANAS",
+                    "alpha": 0,
+                    "factor_retraso": 999.0
+                },
+                {
+                    "u": "J1_PIURA",
+                    "v": "I3_TAMBOGRANDE",
+                    "alpha": 1,
+                    "factor_retraso": 2.4
+                },
+                {
+                    "u": "J3_CHULUCANAS",
+                    "v": "I4_MORROPON_SALITRAL",
+                    "alpha": 1,
+                    "factor_retraso": 1.6
+                }
+            ]
+        },
+        "s2_sierra_piurana": {
+            "id": "s2",
+            "nombre": "Escenario s2: Aislamiento de la Sierra Piurana (PE-1NJ)",
+            "corredor_afectado": "Ruta Empalme PE-1NJ - Canchaque - Huancabamba",
+            "mecanismo_falla": "Huaicos y flujos de detritos en sectores Pusmalca y Agua Blanca en Canchaque",
+            "probabilidad_default": 0.30,
+            "arcos_afectados": [
+                {
+                    "u": "J3_CHULUCANAS",
+                    "v": "I6_CANCHAQUE_FAIQUE",
+                    "alpha": 0,
+                    "factor_retraso": 999.0
+                },
+                {
+                    "u": "I4_MORROPON_SALITRAL",
+                    "v": "I6_CANCHAQUE_FAIQUE",
+                    "alpha": 1,
+                    "factor_retraso": 4.2
+                },
+                {
+                    "u": "I6_CANCHAQUE_FAIQUE",
+                    "v": "I7_HUANCABAMBA",
+                    "alpha": 1,
+                    "factor_retraso": 1.8
+                }
+            ]
+        },
+        "s3_bajo_piura": {
+            "id": "s3",
+            "nombre": "Escenario s3: Inundacion del Bajo Piura (PE-1N)",
+            "corredor_afectado": "Via de Evitamiento y eje Piura - Catacaos (PE-1N)",
+            "mecanismo_falla": "Desborde del rio Piura (Q > 3,000 m3/s) y rotura de diques en margenes izquierda y derecha",
+            "probabilidad_default": 0.35,
+            "arcos_afectados": [
+                {
+                    "u": "J1_PIURA",
+                    "v": "I0_CATACAOS",
+                    "alpha": 0,
+                    "factor_retraso": 999.0
+                },
+                {
+                    "u": "J1_PIURA",
+                    "v": "I1_CURA_MORI",
+                    "alpha": 0,
+                    "factor_retraso": 999.0
+                },
+                {
+                    "u": "J1_PIURA",
+                    "v": "I2_LA_ARENA_TALLAN",
+                    "alpha": 0,
+                    "factor_retraso": 999.0
+                },
+                {
+                    "u": "I0_CATACAOS",
+                    "v": "I1_CURA_MORI",
+                    "alpha": 1,
+                    "factor_retraso": 2.5
+                }
+            ]
+        }
+    }
+}
